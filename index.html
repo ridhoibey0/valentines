@@ -5,21 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>will you be my valentine?</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <div class="container">
+    <div id="section-1" class="overflow-hidden flex flex-col items-center justify-center pt-4 h-screen -mt-16 selection:bg-rose-600 selection:text-white text-zinc-900">
         <!-- Gif -->
-        <img src="assets/images/togepi-love.gif" id="togepi-gif" alt="a cute picture of togepi"/>
+        <img src="https://gifdb.com/images/high/cute-Love-bear-roses-ou7zho5oosxnpo6k.gif" id="togepi-gif" alt="a cute picture of togepi"/>
         <!-- Question -->
         <h1 id="message">
         Will you be my Valentine? (˶ᵔ ᵕ ᵔ˶)
         </h1>
-    </div>
         <!-- Buttons -->
-        <div class="btn-container">
-            <button id="yes-btn"  onclick="window.location.href='yay.html'">Yes</button>
-            <button id="no-btn">No</button>
+        <div class="flex flex-wrap justify-center gap-2 items-center">
+            <button id="yes-btn"  class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg mr-4">Yes</button>
+            <button id="no-btn" class="bg-rose-500 hover:bg-rose-600 rounded-lg text-white font-bold py-2 px-4">No</button>
         </div>
+    </div>
+    <div  id="section-2" class="overflow-hidden flex flex-col items-center justify-center pt-4 h-screen -mt-16 selection:bg-rose-600 selection:text-white text-zinc-900 hidden">
+        <!-- Gif -->
+        <img src="https://gifdb.com/images/high/cute-love-bear-kiss-q9sg4oobpaqn1mld.webp" id="togepi-gif" alt="a cute picture of togepi"/>
+        <!-- Question -->
+        <h1 id="message">
+            Thanks for being my Valentine! ⸜(｡˃ ᵕ ˂ )⸝♡
+        </h1>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
